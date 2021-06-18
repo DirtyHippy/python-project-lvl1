@@ -39,8 +39,8 @@ def is_even(number):
 
 
 def check_answer(answer, num):
-    is_even = is_even(num)
-    return (is_even and answer == 'yes') or (not is_even and answer == 'no')
+    res = is_even(num)
+    return (res and answer == 'yes') or (not res and answer == 'no')
 
 
 def congratulate():
