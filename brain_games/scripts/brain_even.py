@@ -8,7 +8,7 @@ def main():
     print('Answer "yes" if the number is even, otherwise answer "no".')
     won = True
     for i in range(0, 3):
-        number = guess_number()   
+        number = guess_number()
         answer = prompt.string('Your answer:')
         if check_answer(answer, number):
             show_result(True)
@@ -18,7 +18,7 @@ def main():
             break
     if won:
         congratulate()
-    
+
 
 def guess_number():
     random_number = randint(1, 100)
@@ -38,8 +38,9 @@ def is_even(number):
     return number % 2 == 0
 
 
-def check_answer(answer, number):
-    return (is_even(number) and answer =='yes') or (not is_even(number) and answer =='no') 
+def check_answer(answer, num):
+    is_even = is_even(num)
+    return (is_even and answer == 'yes') or (not is_even and answer == 'no')
 
 
 def congratulate():
