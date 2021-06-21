@@ -15,7 +15,7 @@ def run_game(user_name):
             break
     else:
         cli.congratulate(user_name)
-
+        
 
 def make_question():
     number = cli.get_random_number()
