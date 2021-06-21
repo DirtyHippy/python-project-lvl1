@@ -1,13 +1,17 @@
 from brain_games import cli
 
 
+GAMES_COUNT = 3
+
+
 def main():
-    user_name = cli.welcome_user('Answer "yes" if the number is even, otherwise answer "no".')
+    user_name = cli.welcome_user('Answer "yes" if the number is even, '
+                                 'otherwise answer "no".')
     run_game(user_name)
 
 
 def run_game(user_name):
-    for i in range(0, 3):
+    for i in range(0, GAMES_COUNT):
         question, correct_answer = make_question()
         user_answer = cli.ask_question(question)
         cli.show_result(user_answer, correct_answer, user_name)
@@ -15,7 +19,7 @@ def run_game(user_name):
             break
     else:
         cli.congratulate(user_name)
-        
+
 
 def make_question():
     number = cli.get_random_number()

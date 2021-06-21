@@ -2,13 +2,16 @@ from brain_games import cli
 from random import choice
 
 
+GAMES_COUNT = 3
+
+
 def main():
     user_name = cli.welcome_user('What number is missing in the progression?')
     run_game(user_name)
 
 
 def run_game(user_name):
-    for i in range(0, 3):
+    for i in range(0, GAMES_COUNT):
         question, correct_answer = make_question()
         user_answer = cli.ask_question(question)
         cli.show_result(user_answer, correct_answer, user_name)

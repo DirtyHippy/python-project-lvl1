@@ -1,13 +1,17 @@
 from brain_games import cli
 
 
+GAMES_COUNT = 3
+
+
 def main():
-    user_name = cli.welcome_user('Find the greatest common divisor of given numbers.')
+    user_name = cli.welcome_user('Find the greatest common '
+                                 'divisor of given numbers.')
     run_game(user_name)
 
 
 def run_game(user_name):
-    for i in range(0, 3):
+    for i in range(0, GAMES_COUNT):
         question, correct_answer = make_question()
         user_answer = cli.ask_question(question)
         cli.show_result(user_answer, correct_answer, user_name)
@@ -20,7 +24,9 @@ def run_game(user_name):
 def make_question():
     first_number = cli.get_random_number()
     second_number = cli.get_random_number()
-    return "{} {}".format(first_number, second_number), str(gcd(first_number, second_number))
+    question = "{} {}".format(first_number, second_number)
+    correct_answer = str(gcd(first_number, second_number))
+    return question, correct_answer
 
 
 def gcd(a, b):

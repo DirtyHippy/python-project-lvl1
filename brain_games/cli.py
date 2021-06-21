@@ -36,7 +36,8 @@ def show_result(user_answer, correct_answer, user_name):
     if user_answer == correct_answer:
         print("Correct!")
     else:
-        print("'{}' is wrong answer ;(. Correct answer was '{}'.".format(user_answer, correct_answer))
+        print("'{}' is wrong answer ;(. Correct answer was '{}'.".format(
+            user_answer, correct_answer))
         print("Let's try again, {}!".format(user_name))
 
 
