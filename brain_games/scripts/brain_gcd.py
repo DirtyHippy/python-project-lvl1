@@ -2,7 +2,7 @@ from brain_games import cli
 
 
 def main():
-    user_name = cli.welcome_user('What is the result of the expression?')
+    user_name = cli.welcome_user('Find the greatest common divisor of given numbers.')
     run_game(user_name)
 
 
@@ -15,11 +15,18 @@ def run_game(user_name):
             break
     else:
         cli.congratulate(user_name)
-
+        
 
 def make_question():
-    question = str(cli.get_random_number()) + cli.get_random_operation() + str(cli.get_random_number())
-    return question, str(eval(question))
+    first_number = cli.get_random_number()
+    second_number = cli.get_random_number()
+    return "{} {}".format(first_number, second_number), str(gcd(first_number, second_number))
+
+
+def gcd(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
 
 
 if __name__ == '__main__':
