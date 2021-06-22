@@ -13,6 +13,8 @@ def make_question():
 
 
 def is_prime(n):
+    if n < 2:
+        return 'no'
     d = 2
     while d * d <= n and n % d != 0:
         d += 1
