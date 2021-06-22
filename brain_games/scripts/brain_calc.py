@@ -24,7 +24,7 @@ def make_question():
     first_number = cli.get_random_number()
     second_number = cli.get_random_number()
     operation = cli.get_random_operation()
-    question = str(first_number) + operation + str(second_number)
+    question = "{} {} {}".format(first_number, operation, second_number)
     return question, str(eval(question))
 
 
