@@ -2,6 +2,9 @@ import prompt
 from random import choice, randint
 
 
+GAMES_COUNT = 3
+
+
 def main():
     welcome_user()
 
@@ -39,6 +42,18 @@ def show_result(user_answer, correct_answer, user_name):
         print("'{}' is wrong answer ;(. Correct answer was '{}'.".format(
             user_answer, correct_answer))
         print("Let's try again, {}!".format(user_name))
+
+
+def run_game(game_module, game_rules):
+    user_name = welcome_user(game_rules)
+    for i in range(0, GAMES_COUNT):
+        question, correct_answer = game_module.make_question()
+        user_answer = ask_question(question)
+        show_result(user_answer, correct_answer, user_name)
+        if user_answer != correct_answer:
+            break
+    else:
+        congratulate(user_name)
 
 
 if __name__ == '__main__':
