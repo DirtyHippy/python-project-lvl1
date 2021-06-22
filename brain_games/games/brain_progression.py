@@ -1,5 +1,5 @@
 from brain_games import cli
-from random import choice
+from random import randint
 from brain_games.games import brain_progression
 
 
@@ -15,9 +15,10 @@ def make_question():
     for i in range(1, 10):
         next_number = first_number + i * step
         progression.append(str(next_number))
-    secret_number = choice(progression)
+    secret_number_index = randint(0, len(progression) - 1)
+    secret_number = progression[secret_number_index]
+    progression[secret_number_index] = '..'
     question = " ".join(progression)
-    question = question.replace(secret_number, '..')
     return question, secret_number
 
 
