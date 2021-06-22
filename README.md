@@ -6,5 +6,6 @@
 
 [![Linter](https://github.com/DirtyHippy/python-project-lvl1/workflows/linter/badge.svg)](https://github.com/DirtyHippy/python-project-lvl1/actions)
 
-### Пример установки и запуска игры brain-even:
-(https://asciinema.org/a/WxLD10miHq4yrY1sCUywPf7hv)
+
+### Пример установки и запуска игры brain-even
+[![asciicast](https://asciinema.org/a/WxLD10miHq4yrY1sCUywPf7hv.svg)](https://asciinema.org/a/WxLD10miHq4yrY1sCUywPf7hv)
