@@ -1,14 +1,11 @@
-from brain_games import cli
-from brain_games.games import brain_prime
+import random
 
 
-def main():
-    game_rules = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-    cli.run_game(brain_prime, game_rules)
+GAME_RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def make_question():
-    number = cli.get_random_number(100)
+    number = random.randint(1, 100)
     return number, is_prime(number)
 
 
@@ -19,7 +16,3 @@ def is_prime(n):
     while d * d <= n and n % d != 0:
         d += 1
     return 'yes' if d * d > n else 'no'
-
-
-if __name__ == '__main__':
-    main()

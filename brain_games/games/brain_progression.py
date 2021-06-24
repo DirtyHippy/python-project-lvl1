@@ -1,16 +1,12 @@
-from brain_games import cli
 import random
-from brain_games.games import brain_progression
 
 
-def main():
-    game_rules = 'What number is missing in the progression?'
-    cli.run_game(brain_progression, game_rules)
+GAME_RULES = 'What number is missing in the progression?'
 
 
 def make_question():
-    first_number = cli.get_random_number(1, 100)
-    step = cli.get_random_number(1, 10)
+    first_number = random.randint(1, 100)
+    step = random.randint(1, 10)
     progression = []
     for i in range(10):
         next_number = first_number + i * step
@@ -20,7 +16,3 @@ def make_question():
     progression[secret_number_index] = '..'
     question = " ".join(progression)
     return question, secret_number
-
-
-if __name__ == '__main__':
-    main()

@@ -17,11 +17,11 @@ flake8 = "^3.9.2"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.games.brain_games:main"
-brain-even = "brain_games.games.brain_even:main"
-brain-calc = "brain_games.games.brain_calc:main"
-brain-gcd = "brain_games.games.brain_gcd:main"
-brain-progression = "brain_games.games.brain_progression:main"
-brain-prime = "brain_games.games.brain_prime:main"
+brain-even = "brain_games.scripts.run_game:run_even"
+brain-calc = "brain_games.scripts.run_game:run_calc"
+brain-gcd = "brain_games.scripts.run_game:run_gcd"
+brain-progression = "brain_games.scripts.run_game:run_progression"
+brain-prime = "brain_games.scripts.run_game:run_prime"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
