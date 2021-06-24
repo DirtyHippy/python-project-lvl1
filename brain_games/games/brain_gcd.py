@@ -8,8 +8,8 @@ def main():
 
 
 def make_question():
-    first_number = cli.get_random_number()
-    second_number = cli.get_random_number()
+    first_number = cli.get_random_number(1, 50)
+    second_number = cli.get_random_number(1, 50)
     question = "{} {}".format(first_number, second_number)
     correct_answer = str(gcd(first_number, second_number))
     return question, correct_answer

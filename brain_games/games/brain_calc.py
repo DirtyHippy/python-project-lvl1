@@ -1,5 +1,6 @@
 from brain_games import cli
 from brain_games.games import brain_calc
+import random
 
 
 def main():
@@ -8,9 +9,9 @@ def main():
 
 
 def make_question():
-    first_number = cli.get_random_number()
-    second_number = cli.get_random_number()
-    operation = cli.get_random_operation()
+    first_number = cli.get_random_number(1, 10)
+    second_number = cli.get_random_number(1, 10)
+    operation = random.choice('+-*')
     question = "{} {} {}".format(first_number, operation, second_number)
     return question, str(eval(question))
 

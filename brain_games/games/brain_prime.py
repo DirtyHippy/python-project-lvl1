@@ -8,7 +8,7 @@ def main():
 
 
 def make_question():
-    number = cli.get_random_number()
+    number = cli.get_random_number(100)
     return number, is_prime(number)
 
 
