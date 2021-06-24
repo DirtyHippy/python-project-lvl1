@@ -9,4 +9,14 @@ def make_question():
     second_number = random.randint(1, 10)
     operation = random.choice('+-*')
     question = "{} {} {}".format(first_number, operation, second_number)
-    return question, str(eval(question))
+    correct_answer = calc(first_number, second_number, operation)
+    return question, correct_answer
+
+
+def calc(first_number, second_number, operation):
+    if operation == '+':
+        return first_number + second_number
+    elif operation == '-':
+        return first_number - second_number
+    elif operation == '*':
+        return first_number * second_number
