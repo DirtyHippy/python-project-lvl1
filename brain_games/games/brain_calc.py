@@ -10,7 +10,7 @@ def make_question():
     operation = random.choice('+-*')
     question = "{} {} {}".format(first_number, operation, second_number)
     correct_answer = calc(first_number, second_number, operation)
-    return question, correct_answer
+    return question, str(correct_answer)
 
 
 def calc(first_number, second_number, operation):
