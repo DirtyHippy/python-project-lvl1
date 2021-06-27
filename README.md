@@ -14,6 +14,11 @@ python3 -m pip install --user dist/*.whl
 ## Usage Brain-games
 
 ### Brain-even
+
+#### Launching brain-even
+```bash 
+brain-even
+```
 [![asciicast](https://asciinema.org/a/WxLD10miHq4yrY1sCUywPf7hv.svg)](https://asciinema.org/a/WxLD10miHq4yrY1sCUywPf7hv)
 
 ### Brain-calc
