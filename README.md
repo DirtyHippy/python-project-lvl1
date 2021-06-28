@@ -15,7 +15,6 @@ pip install git+https://github.com/DirtyHippy/python-project-lvl1.git
 
 ### Brain-even
 Launching: brain-even
-
 [![asciicast](https://asciinema.org/a/vD90cw2nSOvrqou2fwvlKPOI1.svg)](https://asciinema.org/a/vD90cw2nSOvrqou2fwvlKPOI1)
 
 ### Brain-calc
