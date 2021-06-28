@@ -16,20 +16,20 @@ pip install git+https://github.com/DirtyHippy/python-project-lvl1.git
 ### Brain-even
 Launching: brain-even
 
-[![asciicast](https://asciinema.org/a/WxLD10miHq4yrY1sCUywPf7hv.svg)](https://asciinema.org/a/WxLD10miHq4yrY1sCUywPf7hv)
+[![asciicast](https://asciinema.org/a/vD90cw2nSOvrqou2fwvlKPOI1.svg)](https://asciinema.org/a/vD90cw2nSOvrqou2fwvlKPOI1)
 
 ### Brain-calc
 Launching: brain-calc
-[![asciicast](https://asciinema.org/a/zxDtxERIimqwDLhEHiyec6PFa.svg)](https://asciinema.org/a/zxDtxERIimqwDLhEHiyec6PFa)
+[![asciicast](https://asciinema.org/a/pQxma65iuWfAc0UlaWjeVrk5Z.svg)](https://asciinema.org/a/pQxma65iuWfAc0UlaWjeVrk5Z)
 
 ### Brain-gcd
 Launching: brain-gcd
-[![asciicast]( https://asciinema.org/a/6aw8WzI3hA1jhtDjSh6gkedqO.svg)]( https://asciinema.org/a/6aw8WzI3hA1jhtDjSh6gkedqO)
+[![asciicast](https://asciinema.org/a/zhv2MBRwF3GriEpMvDo9R1Uw7.svg)]( https://asciinema.org/a/zhv2MBRwF3GriEpMvDo9R1Uw7)
 
 ### Brain-progression
 Launching: brain-progression
-[![asciicast](https://asciinema.org/a/MxaL9usfQE8CtTJZueGJLtBZW.svg)](https://asciinema.org/a/MxaL9usfQE8CtTJZueGJLtBZW)
+[![asciicast](https://asciinema.org/a/7ORJ9RdEvphday7NBA7X3WgZ6.svg)](https://asciinema.org/a/7ORJ9RdEvphday7NBA7X3WgZ6)
 
 ### Brain-prime
 Launching: brain-prime
-[![asciicast](https://asciinema.org/a/5Yg3xU0NvMCT3kjNFyXzJLoAt.svg)](https://asciinema.org/a/5Yg3xU0NvMCT3kjNFyXzJLoAt)
+[![asciicast](https://asciinema.org/a/gsTlbzmTHmaXn1GidukbkEXqk.svg)](https://asciinema.org/a/gsTlbzmTHmaXn1GidukbkEXqk)
