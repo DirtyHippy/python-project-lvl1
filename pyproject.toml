@@ -3,7 +3,7 @@ name = "hexlet-code"
 version = "0.1.0"
 description = "brain games"
 authors = ["dirty_hippy"]
-repository = "https://github.com/DirtyHippy/python-project-lvl1"
+repository = "https://github.com/DirtyHippy/python-project-lvl1.git"
 packages = [
   { include = "brain_games" },
 ]

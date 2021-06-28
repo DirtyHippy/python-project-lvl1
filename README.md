@@ -8,7 +8,7 @@
 
 ## Installation Brain-games
 ```bash 
-python3 -m pip install --user dist/*.whl
+pip install git+https://github.com/DirtyHippy/python-project-lvl1.git
 ```
 
 ## Usage Brain-games

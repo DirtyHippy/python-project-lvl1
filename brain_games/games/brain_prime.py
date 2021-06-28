@@ -10,10 +10,10 @@ def make_question():
     return number, correct_answer
 
 
-def is_prime(n):
-    if n < 2:
+def is_prime(number):
+    if number < 2:
         return False
-    d = 2
-    while d * d <= n and n % d != 0:
-        d += 1
-    return d * d > n
+    divisor = 2
+    while divisor * divisor <= number and number % divisor != 0:
+        divisor += 1
+    return divisor * divisor > number
